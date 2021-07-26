@@ -24,7 +24,6 @@ body {
 
 .Canvas {
   margin: 0.5rem 0;
-  background: rgb(0,87,175);
   background: radial-gradient(circle, rgba(0,87,175,1) 0%, rgba(0,80,160,1) 100%);
   height: calc(90vw * 4/3);
   display: flex;
@@ -34,7 +33,8 @@ body {
   padding: 10% 0;
 
   &__title {
-    width: calc(100% - 2rem);
+    width: calc(100% - 4rem);
+    line-height: 1.5;
     text-align: center;
     font-size: 28px;
     color: white;
@@ -45,6 +45,7 @@ body {
   }
 
   &__subtitle {
+    max-width: 90%;
     font-family: 'Roboto';
     font-weight: 600;
     border-radius: 8px;
@@ -56,9 +57,13 @@ body {
 
     &--redPart {
       color: #ee3333;
+      white-space: nowrap;
     }
     &--greenPart {
       color: #50aa11;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 }
@@ -74,8 +79,13 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  .outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container {
-    margin: 1rem auto;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 52px auto;

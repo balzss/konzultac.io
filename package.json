@@ -11,10 +11,8 @@
     "emoji-mart": "^3.0.1",
     "eslint": "^7.31.0",
     "html-to-image": "^1.7.0",
-    "html2canvas": "^1.1.4",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
-    "react-apple-emojis": "^2.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
