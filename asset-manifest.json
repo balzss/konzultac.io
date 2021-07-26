@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/plakat/static/css/main.4020bd63.chunk.css",
-    "main.js": "/plakat/static/js/main.9498a6bd.chunk.js",
-    "main.js.map": "/plakat/static/js/main.9498a6bd.chunk.js.map",
+    "main.css": "/plakat/static/css/main.b24126e1.chunk.css",
+    "main.js": "/plakat/static/js/main.8021f115.chunk.js",
+    "main.js.map": "/plakat/static/js/main.8021f115.chunk.js.map",
     "runtime-main.js": "/plakat/static/js/runtime-main.9cbff9c3.js",
     "runtime-main.js.map": "/plakat/static/js/runtime-main.9cbff9c3.js.map",
     "static/css/2.27c67e9f.chunk.css": "/plakat/static/css/2.27c67e9f.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.53474d9c.chunk.js.map": "/plakat/static/js/3.53474d9c.chunk.js.map",
     "index.html": "/plakat/index.html",
     "static/css/2.27c67e9f.chunk.css.map": "/plakat/static/css/2.27c67e9f.chunk.css.map",
-    "static/css/main.4020bd63.chunk.css.map": "/plakat/static/css/main.4020bd63.chunk.css.map",
+    "static/css/main.b24126e1.chunk.css.map": "/plakat/static/css/main.b24126e1.chunk.css.map",
     "static/js/2.87350d14.chunk.js.LICENSE.txt": "/plakat/static/js/2.87350d14.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9cbff9c3.js",
     "static/css/2.27c67e9f.chunk.css",
     "static/js/2.87350d14.chunk.js",
-    "static/css/main.4020bd63.chunk.css",
-    "static/js/main.9498a6bd.chunk.js"
+    "static/css/main.b24126e1.chunk.css",
+    "static/js/main.8021f115.chunk.js"
   ]
 }
