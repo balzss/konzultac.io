@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -23,9 +24,9 @@ body {
 }
 
 .Canvas {
-  margin: 0.5rem 0;
+  margin: 0;
   background: radial-gradient(circle, rgba(0,87,175,1) 0%, rgba(0,80,160,1) 100%);
-  height: calc(90vw * 4/3);
+  height: 500px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,7 +48,7 @@ body {
   &__subtitle {
     max-width: 90%;
     font-family: 'Roboto';
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 8px;
     background-color: white;
     padding: 8px 12px;
@@ -96,7 +97,6 @@ body {
     width: 400px;
     height: 600px;
     grid-row: 1 / 2;
-    margin: 0;
   }
 
   .Toolbar {

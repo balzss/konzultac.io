@@ -35,10 +35,10 @@ const App = () => {
 
   const getImg = () => {
     toPng(canvasRef.current, { pixelRatio: 1 }).then((dataUrl) => {
-      const link = document.createElement('a')
-      link.download = 'my-image-name.png'
-      link.href = dataUrl
-      link.click()
+      const link = document.createElement('a');
+      link.download = `${primaryText.split(' ').splice(0, 3).join(' ')} (${new Date(Date.now()).toISOString().substring(0, 10)})`;
+      link.href = dataUrl;
+      link.click();
     });
   };
 
@@ -54,7 +54,7 @@ const App = () => {
         </div>
         <div className="Canvas" id="capture" ref={canvasRef}>
           <div className="Canvas__title">{primaryText.toUpperCase()}</div>
-          <img src={`/img-apple-160/${emoji}.png`} alt="" />
+          <img src={`img-apple-160/${emoji}.png`} alt="" />
           {secondaryText && (
             <div className="Canvas__subtitle">
               {decorateText(secondaryText)}
