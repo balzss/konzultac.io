@@ -64,14 +64,14 @@ const App = () => {
         <div className="Fields">
           <TextField
             className="field"
-            label="egyik"
+            label="Felső szöveg"
             variant="outlined"
             value={primaryText}
             onChange={(e) => setPrimaryText(e.target.value)}
           />
           <TextField
             className="field"
-            label="másik"
+            label="Alsó szöveg"
             variant="outlined"
             value={secondaryText}
             onChange={(e) => setSecondarytext(e.target.value)}
