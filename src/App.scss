@@ -24,7 +24,6 @@ body {
 }
 
 .Canvas {
-  margin: 0;
   background: radial-gradient(circle, rgba(0,87,175,1) 0%, rgba(0,80,160,1) 100%);
   height: 500px;
   display: flex;
@@ -71,12 +70,12 @@ body {
 }
 
 .Fields {
-  margin: 1rem 0;
+  margin: 24px 0;
   display: flex;
   flex-direction: column;
 
   .field {
-    margin-bottom: 0.5rem;
+    margin-bottom: 12px;
   }
 }
 
