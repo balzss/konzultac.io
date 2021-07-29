@@ -73,7 +73,7 @@ const App = () => {
 
   const downloadImage = () => {
     setShowWatermark(true);
-    toPng(canvasRef.current, { pixelRatio: 1 }).then((dataUrl) => {
+    toPng(canvasRef.current, { pixelRatio: 2 }).then((dataUrl) => {
       setShowWatermark(false);
       const link = document.createElement('a');
       link.download = `${primaryText.split(' ').splice(0, 3).join(' ')} (${new Date(Date.now()).toISOString().substring(0, 10)})`;
@@ -84,7 +84,7 @@ const App = () => {
 
   const shareImage = () => {
     setShowWatermark(true);
-    toPng(canvasRef.current, { pixelRatio: 1 }).then(async (dataUrl) => {
+    toPng(canvasRef.current, { pixelRatio: 2 }).then(async (dataUrl) => {
       setShowWatermark(false);
       const blob = await (await fetch(dataUrl)).blob();
       const files = [new File([blob], 'plakat.png', { type: blob.type, lastModified: new Date().getTime() })];
