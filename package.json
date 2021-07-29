@@ -45,6 +45,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "emojibase-data": "^6.2.0",
+    "gh-pages": "^3.2.3",
+    "xml2json": "^0.12.0"
   }
 }

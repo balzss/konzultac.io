@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 html {
@@ -24,6 +24,7 @@ body {
 }
 
 .Canvas {
+  position: relative;
   background: radial-gradient(circle, rgba(0,87,175,1) 0%, rgba(0,80,160,1) 100%);
   height: 500px;
   display: flex;
