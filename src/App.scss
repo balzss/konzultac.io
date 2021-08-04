@@ -31,7 +31,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  padding: 10% 0;
+  padding: 2rem 0;
 
   &__title {
     width: calc(100% - 4rem);
@@ -68,6 +68,17 @@ body {
       white-space: nowrap;
     }
   }
+
+  .watermark {
+    opacity: 0.2;
+    color: white;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-style: italic;
+  }
 }
 
 .Fields {
@@ -80,7 +91,7 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 578px) {
   .outer-container {
     display: flex;
     justify-content: center;
@@ -92,6 +103,7 @@ body {
     grid-template-columns: auto 1fr;
     grid-template-rows: 52px auto;
     grid-column-gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   .Canvas {

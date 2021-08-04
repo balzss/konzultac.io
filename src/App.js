@@ -57,6 +57,7 @@ const App = () => {
   const [secondaryText, setSecondarytext] = useState(defaults.secondaryText);
   const [emoji, setEmoji] = useState(defaults.emoji);
   const [showWatermark, setShowWatermark] = useState(false);
+  const [horizontalLayout, setHorizontalLayout] = useState(false);
 
   const decorateText = (text) => {
     const splitText = text.split(' ');
@@ -76,7 +77,7 @@ const App = () => {
     toPng(canvasRef.current, { pixelRatio: 2 }).then((dataUrl) => {
       setShowWatermark(false);
       const link = document.createElement('a');
-      link.download = `${primaryText.split(' ').splice(0, 3).join(' ')} (${new Date(Date.now()).toISOString().substring(0, 10)})`;
+      link.download = primaryText;
       link.href = dataUrl;
       link.click();
     });
@@ -96,7 +97,9 @@ const App = () => {
     <div className="outer-container">
       <div className="container">
         <div className="Toolbar">
-          {/* <IconButton> <Rotate90DegreesCcwRounded /> </IconButton> */}
+          {/*<IconButton onClick={() => setHorizontalLayout(prevState => !prevState)}>
+            <Rotate90DegreesCcwRounded />
+          </IconButton>*/}
           <IconButton onClick={downloadImage}>
             <GetAppRounded />
           </IconButton>
@@ -106,7 +109,7 @@ const App = () => {
             </IconButton>
           )}
         </div>
-        <div className="Canvas" id="capture" ref={canvasRef}>
+        <div className={`Canvas ${horizontalLayout ? 'Canvas--horizontal' : ''}`} id="capture" ref={canvasRef}>
           <div className="Canvas__title">{primaryText.toUpperCase()}</div>
           <img src={`img-apple-160/${emoji}.png`} alt="" />
           {secondaryText && (
@@ -115,7 +118,7 @@ const App = () => {
             </div>
           )}
           {showWatermark && (
-            <div style={{opacity: '0.2', color: 'white', fontFamily: 'Roboto Slab', fontWeight: '500', position: 'absolute', bottom: '8px', right: '12px', fontStyle: 'italic'}}>konzultac.io</div>
+            <div className="watermark">konzultac.io</div>
           )}
         </div>
         <div className="Fields">
